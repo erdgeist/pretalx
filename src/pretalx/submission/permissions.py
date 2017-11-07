@@ -51,7 +51,7 @@ def can_be_edited(user, obj):
 
 @rules.predicate
 def can_review_submission(user, obj):
-    return not user in obj.speakers.all()
+    return user not in obj.speakers.all()
 
 
 rules.add_perm('submission.withdraw_submission', can_be_withdrawn & is_speaker)
