@@ -17,6 +17,9 @@ Features
   cannot be saved at all. (#215)
 - You can now add questions that take a file upload as an answer. (#208)
 - Speakers can now upload files which will be shown on their talk page. (#209)
+- Questions can now be considered 'asking for personal data', and answers to
+  those questions will be deleted on account deletion. Questions are considered
+  to ask for personal data by default, to ease migration.
 
 Bug fixes
 ~~~~~~~~~
